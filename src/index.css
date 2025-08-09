@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+
+.scroll-container{
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style : none;
+}
+
+.scroll-container::-webkit-scrollbar{
+    display : none;
+}
+
+*{
+ cursor: pointer;
+}
