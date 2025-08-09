@@ -29,8 +29,8 @@ const DPOP = () => {
 
   return (
     <div className="flex justify-center items-center m-5">
-      <div className="flex flex-row justify-between items-center w-[80%] ">
-        <div className="w-[50%] flex gap-15 flex-col p-10">
+      <div className="flex flex-row justify-between items-center sm:w-[80%] ">
+        <div className="sm:w-[50%] flex gap-15 flex-col p-10">
           <h1 className="text-3xl w-full">
             Discover the Power of our PRODUCTS
           </h1>

@@ -25,7 +25,7 @@ const Footer = () => {
             <img
               src="https://media.istockphoto.com/id/1465419181/vector/swan-logo-images-illustration.jpg?s=612x612&w=0&k=20&c=WfsuF8ZHxxbA5YSHkB0kQGO-6NLfhVLioe8D08h0HVc="
               alt=""
-              className="h-45 w-45 rounded-full border-4 border-transparent group-hover:border-[#BF4408] transition-all duration-500 hover:scale-110"
+              className="sm:h-45 sm:w-45 rounded-full border-4 border-transparent group-hover:border-[#BF4408] transition-all duration-500 hover:scale-110"
             />
             <span className="absolute inset-0 rounded-full border-4 border-[#BF4408] scale-0 group-hover:scale-115 transition-transform duration-500"></span>
           </div>

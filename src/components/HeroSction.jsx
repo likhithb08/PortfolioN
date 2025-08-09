@@ -9,12 +9,6 @@ const HeroSction = () => {
       "https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/06/Portfolio-website-of-the-product-designer-and-front-end-developer-Adham-Dannaway-1024x869.png",
     image3:
       "https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/04/web-developer-portfolio.png",
-    image4:
-      "https://media.istockphoto.com/id/1221473823/photo/circle-of-smoke.jpg?s=612x612&w=0&k=20&c=p_35CgCJ5xTLoZBNITLyP0dEqxXHVnRdMa_8RGxS3Jw=",
-    image5:
-      "https://media.istockphoto.com/id/1221473823/photo/circle-of-smoke.jpg?s=612x612&w=0&k=20&c=p_35CgCJ5xTLoZBNITLyP0dEqxXHVnRdMa_8RGxS3Jw=",
-    image6:
-      "https://market-resized.envatousercontent.com/previews/files/283941533/preview.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=8e8f31263844ec59eb1e79781e211ea185355b529c2317aa9ef8cfa292027d13",
   };
   return (
     <>
@@ -25,7 +19,7 @@ const HeroSction = () => {
         transition={{ duration: 1 }}
         className="hero-section h-auto flex items-center justify-center white flex-col "
       >
-        <h1 className="text-4xl font-bold mb-4 mt-10 ">
+        <h1 className="sm:text-4xl font-bold mb-4 mt-10 ">
           Full Stack Developer Crafting Scalable Web & AI Solutions
         </h1>
         <p className="text-lg mb-6">
@@ -54,14 +48,14 @@ const HeroSction = () => {
           </motion.a>
         </div>
       </motion.div>
-      <motion.div className="hero-section  h-[500px] flex flex-wrap p-5 bg-gray-100 items-center justify-center gap-10 mt-10 overflow-x-scroll scroll-container scroll-smooth">
+      <motion.div className="hero-section  sm:h-[500px] flex flex-wrap p-5 bg-gray-100 items-center justify-center gap-10 mt-10 overflow-x-scroll scroll-container scroll-smooth">
         {Object.values(images).map((image, index) => {
           return (
             <a href="" key={index}>
               <img
                 src={image}
                 alt=""
-                className="h-[450px] w-[450px] rounded-md object-cover shadow-2xl hover:scale-105 transition-all duration-150"
+                className="sm:h-[450px] sm:w-[450px] rounded-md object-cover shadow-2xl hover:scale-105 transition-all duration-150"
               />
             </a>
           );

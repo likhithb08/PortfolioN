@@ -20,7 +20,7 @@ const Location = () => {
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
         title='Google Map'
-        className="h-[350px] w-[600px] rounded-2xl shadow-2xl "
+        className="sm:h-[350px] sm:w-[600px] rounded-2xl shadow-2xl "
         frameBorder='1'
       ></iframe>
     </div>

@@ -29,7 +29,7 @@ const isInView = useInView(ref, {once : true})
 
   return (
     <>
-      <section className="bg-gray-100 p-20 h-500px flex flex-row items-center justify-around ">
+      <section className="bg-gray-100 p-20 sm:h-500px flex flex-row items-center justify-around ">
         <div className="">
           <img
             src="https://market-resized.envatousercontent.com/previews/files/283941533/preview.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=8e8f31263844ec59eb1e79781e211ea185355b529c2317aa9ef8cfa292027d13"
@@ -61,7 +61,7 @@ const isInView = useInView(ref, {once : true})
               }`}
             >
               <h2 className="font-[500] sm:text-3xl mb-5">{section.title}</h2>
-              <p className="text-sm w-[100%] ">{section.description}</p>
+              <p className="text-sm sm:w-[100%] ">{section.description}</p>
             </motion.div>
           ))}
         </motion.div>
