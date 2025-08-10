@@ -45,13 +45,13 @@ const Navbar = () => {
           <div className="flex gap-3 items-center mt-5 md:mt-0">
             <a
               href="#"
-              className="bg-[#BF4408] text-white sm:px-4 sm:py-1 rounded-full bold"
+              className="bg-[#BF4408] text-white sm:px-4 sm:p-10 md:p-2 sm:py-2 rounded-full bold"
             >
               <b>Resume</b>
             </a>
             <a
               href="#contact"
-              className="border border-[#BF4408] text-[#BF4408] sm:px-4 sm:py-1 rounded-full"
+              className="border border-[#BF4408] text-[#BF4408] sm:px-4 md:p-2 sm:py-2 rounded-full"
             >
               <b>Hire Me</b>
             </a>
