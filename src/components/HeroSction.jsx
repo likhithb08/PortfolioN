@@ -48,7 +48,7 @@ const HeroSction = () => {
           </motion.a>
         </div>
       </motion.div>
-      <motion.div className="hero-section  sm:h-[500px] flex flex-wrap p-5 bg-gray-100 items-center justify-center gap-10 mt-10 overflow-x-scroll scroll-container scroll-smooth">
+      <motion.div className="hero-section  h-[300px] sm:h-[500px] flex flex-wrap p-5 bg-gray-100 items-center justify-center gap-10 mt-10 overflow-x-scroll scroll-container scroll-smooth">
         {Object.values(images).map((image, index) => {
           return (
             <a href="" key={index}>

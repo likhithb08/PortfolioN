@@ -66,12 +66,12 @@ const PricingPlan = () => {
       </div>
 
       {/* Pricing Cards */}
-      <div className="flex flex-col sm:flex-row flex-wrap overflow-hidden overflow-y-scroll  scroll-container h-[450px] justify-center items-center gap-10 pb-10 w-full">
+      <div className="flex flex-col sm:flex-row flex-wrap overflow-hidden overflow-x-scroll  scroll-container h-[550px] justify-center items-center gap-10 pb-10 w-full">
         {PricingPlan.map((plan, i) => {
           return (
             <div
               key={i}
-              className="flex flex-col border justify-around p-6 w-full sm:w-[300px] h-auto sm:h-[400px] rounded-2xl bg-gray-100 items-center hover:scale-105 hover:bg-[#f0e0d8] transition-all duration-300"
+              className="flex flex-col border justify-around p-6  w-[300px] sm:w-[300px] h-[450px] sm:h-[400px] rounded-2xl bg-gray-100 items-center hover:scale-105 hover:bg-[#f0e0d8] transition-all duration-300"
             >
               <p className="text-lg font-semibold">{plan.title}</p>
               <h1 className="text-2xl font-bold">{plan.price}</h1>
