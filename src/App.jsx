@@ -17,7 +17,7 @@ const App = () => {
   const [showContent, setShowContent] = useState(false);
   const [testimonials, setTestimonials] = useState([]);
 
-  // Load testimonials from localStorage on mount
+  // Load testimonials from localStorage
   useEffect(() => {
     const stored = localStorage.getItem('testimonials');
     if (stored) {
@@ -25,10 +25,17 @@ const App = () => {
     }
   }, []);
 
+  // Add testimonial
   const handleAddTestimonial = (newTestimonial) => {
     const updated = [...testimonials, newTestimonial];
     setTestimonials(updated);
-    localStorage.setItem('testimonials', JSON.stringify(updated)); // Save to localStorage
+    localStorage.setItem('testimonials', JSON.stringify(updated));
+  };
+
+  // Clear testimonials
+  const handleClearTestimonials = () => {
+    setTestimonials([]);
+    localStorage.removeItem('testimonials');
   };
 
   return (
@@ -51,7 +58,20 @@ const App = () => {
                   <Features25 />
                   <PricingPlan />
                   <DPOP />
+                  
+                  {/* Pass testimonials */}
                   <Testimonials testimonials={testimonials} />
+
+                  {/* Test-only clear button */}
+                  <div className="text-center my-4">
+                    <button 
+                      onClick={handleClearTestimonials}
+                      className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+                    >
+                      Clear All Testimonials
+                    </button>
+                  </div>
+
                   <Location />
                   <Footer />
                 </>
