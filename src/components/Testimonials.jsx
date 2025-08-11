@@ -14,7 +14,7 @@ const Testimonials = ({testimonials = []}) => {
 
       {/* Button to navigate to form */}
       <Link to="/addtestimonial">
-        <button className="relative group bottom-20 left-180 gap-10 py-2 flex items-center hover:text-[#BF4408] transition-colors">
+        <button className="relative group bottom-20 left-150 gap-10 py-2 flex items-center hover:text-[#BF4408] transition-colors">
           <p>Leave a Review</p>
           <span className="absolute -bottom-0 -left-0 rounded h-[2px] w-0 bg-[#BF4408] transition-all duration-500 group-hover:w-full"></span>
           <CiCirclePlus size={35} />
