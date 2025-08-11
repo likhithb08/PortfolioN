@@ -31,10 +31,10 @@ const Features25 = () => {
     <div>
       <section className="bg-gray-100 p-4 sm:p-8 lg:p-20 min-h-screen lg:min-h-[500px] flex flex-col lg:flex-row-reverse items-center justify-center lg:justify-around gap-8 lg:gap-4">
         
-        {/* Image Section - appears first on desktop due to flex-row-reverse */}
-        {/* <div className="w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl flex-shrink-0 ">
-          <MarbleBustViewer></MarbleBustViewer>
-        </div> */}
+        {/* Image Section - appears first on desktop due to flex-row-reverse */} 
+         <div className="w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl flex-shrink-0 ">
+          <img src="https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?semt=ais_hybrid&w=740&q=80" alt="" />
+        </div>
 
         {/* Content Section - appears second on desktop, first on mobile */}
         <motion.div

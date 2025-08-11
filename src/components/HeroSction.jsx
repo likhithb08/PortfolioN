@@ -2,16 +2,19 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
-  const images = {
-    image1:
-      "https://cdn.dribbble.com/userupload/30936747/file/still-82695b29fc736544ffea15d4634b0cb5.png",
-    image2:
-      "https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/06/Portfolio-website-of-the-product-designer-and-front-end-developer-Adham-Dannaway-1024x869.png",
-    image3:
-      "https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/04/web-developer-portfolio.png",
-        image4:
-      "https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/06/Portfolio-website-of-the-product-designer-and-front-end-developer-Adham-Dannaway-1024x869.png",
-  };
+
+  const images = [
+    {
+      image1 : 'https://cdn.dribbble.com/userupload/30936747/file/still-82695b29fc736544ffea15d4634b0cb5.png',
+      link : 'https://freelancer-landing-page-chi.vercel.app/'
+    },{
+      image1 : 'https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/06/Portfolio-website-of-the-product-designer-and-front-end-developer-Adham-Dannaway-1024x869.png',
+      link : 'https://e-not-zz.vercel.app/'
+    },{
+      image1 : 'https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/04/web-developer-portfolio.png',
+      link : 'https://protfolio1-nine.vercel.app/'
+    },
+  ]
   
   return (
     <>
@@ -52,12 +55,12 @@ const HeroSection = () => {
         </div>
       </motion.div>
       
-      <motion.div className="hero-section h-[250px] sm:h-[350px] md:h-[500px] flex p-4 sm:p-5 bg-gray-100 items-center gap-5 sm:gap-10 mt-8 sm:mt-10 overflow-x-auto scroll-container scroll-smooth">
+      <motion.div className="hero-section h-[250px] sm:h-[350px] md:h-[500px] flex p-4 sm:p-5 bg-gray-100 items-center gap-5 sm:gap-10 mt-8 sm:mt-10 overflow-x-auto scroll-container scroll-smooth justify-center">
         {Object.values(images).map((image, index) => {
           return (
-            <a href="" key={index} className="flex-shrink-0">
+            <a href={image.link} key={index} className="flex-shrink-0" target="_blank">
               <img
-                src={image}
+                src={image.image1}
                 alt=""
                 className="h-[200px] w-[300px] sm:h-[350px] sm:w-[350px] md:h-[450px] md:w-[450px] rounded-md object-cover shadow-lg sm:shadow-2xl hover:scale-105 transition-all duration-150"
               />

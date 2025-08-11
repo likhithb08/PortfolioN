@@ -31,10 +31,10 @@ const Features24 = () => {
     <>
       <section className="bg-gray-100 p-4 sm:p-8 lg:p-20 min-h-screen lg:min-h-[500px] flex flex-col lg:flex-row items-center justify-center lg:justify-around gap-8 lg:gap-4">
         
-        {/* Image Section */}
-        {/* <div className="w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl flex-shrink-0 ">
-          <MarbleBustViewer2></MarbleBustViewer2>
-        </div> */}
+        {/* Image Section */} 
+         <div className="w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl flex-shrink-0 ">
+          <img src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?semt=ais_hybrid&w=740&q=80" alt="" />
+        </div>
 
         {/* Content Section */}
         <motion.div
