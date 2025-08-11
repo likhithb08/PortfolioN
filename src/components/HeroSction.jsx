@@ -9,6 +9,8 @@ const HeroSection = () => {
       "https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/06/Portfolio-website-of-the-product-designer-and-front-end-developer-Adham-Dannaway-1024x869.png",
     image3:
       "https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/04/web-developer-portfolio.png",
+        image4:
+      "https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/06/Portfolio-website-of-the-product-designer-and-front-end-developer-Adham-Dannaway-1024x869.png",
   };
   
   return (
@@ -28,7 +30,7 @@ const HeroSection = () => {
           intelligent digital products with clean code and powerful design.
         </p>
 
-        <div className="flex gap-2 sm:gap-3 items-center flex-wrap justify-center">
+        <div className="flex gap-2 sm:gap-3 justify-center items-center flex-wrap ">
           <motion.a
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
