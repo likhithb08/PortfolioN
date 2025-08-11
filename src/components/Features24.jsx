@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from 'react'
-import MarbleBustViewer2 from './MarbelBust2'
+// import MarbleBustViewer2 from './MarbelBust2'
 
 const sections = [
   {
