@@ -27,7 +27,7 @@ const Testimonials = ({testimonials = []}) => {
   {testimonials.length === 0 ? (
     <p className="text-gray-500">No testimonials yet. Be the first to leave a review!</p>
   ) : (
-      {testimonials.map((testimonial, index) => (
+      testimonials.map((testimonial, index) => (
           <div
             id="testimonials"
             key={index}
@@ -51,7 +51,7 @@ const Testimonials = ({testimonials = []}) => {
               <div>{testimonial.testimonial}</div>
             </div>
           </div>
-        ))}
+        ))
 
   )}
 </div>

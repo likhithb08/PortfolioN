@@ -62,7 +62,7 @@ const App = () => {
                   {/* Pass testimonials */}
                   <Testimonials testimonials={testimonials} />
 
-                  {/* Test-only clear button */}
+                  {/* Test-only clear button
                   <div className="text-center my-4">
                     <button 
                       onClick={handleClearTestimonials}
@@ -70,7 +70,7 @@ const App = () => {
                     >
                       Clear All Testimonials
                     </button>
-                  </div>
+                  </div> */}
 
                   <Location />
                   <Footer />
