@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from 'react'
-import MarbleBustViewer from './MarbelBust'
+import MarbleBustViewer2 from './MarbelBust2'
 
 const sections = [
   {
@@ -32,8 +32,8 @@ const Features24 = () => {
       <section className="bg-gray-100 p-4 sm:p-8 lg:p-20 min-h-screen lg:min-h-[500px] flex flex-col lg:flex-row items-center justify-center lg:justify-around gap-8 lg:gap-4">
         
         {/* Image Section */}
-        <div className="w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl flex-shrink-0 shadow-2xl ">
-          <MarbleBustViewer></MarbleBustViewer>
+        <div className="w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl flex-shrink-0 ">
+          <MarbleBustViewer2></MarbleBustViewer2>
         </div>
 
         {/* Content Section */}
