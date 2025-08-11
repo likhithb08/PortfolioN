@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from 'react'
+import MarbleBustViewer from './MarbelBust'
 
 const sections = [
   {
@@ -31,12 +32,8 @@ const Features25 = () => {
       <section className="bg-gray-100 p-4 sm:p-8 lg:p-20 min-h-screen lg:min-h-[500px] flex flex-col lg:flex-row-reverse items-center justify-center lg:justify-around gap-8 lg:gap-4">
         
         {/* Image Section - appears first on desktop due to flex-row-reverse */}
-        <div className="w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl flex-shrink-0 order-2 lg:order-1">
-          <img
-            src="https://market-resized.envatousercontent.com/previews/files/283941533/preview.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=8e8f31263844ec59eb1e79781e211ea185355b529c2317aa9ef8cfa292027d13"
-            alt="Modern web design illustration"
-            className="shadow-2xl w-full h-auto rounded-lg object-cover"
-          />
+        <div className="w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl flex-shrink-0 shadow-2xl ">
+          <MarbleBustViewer></MarbleBustViewer>
         </div>
 
         {/* Content Section - appears second on desktop, first on mobile */}

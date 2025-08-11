@@ -16,7 +16,10 @@ const App = () => {
   const [showContent, setShowContent] = useState(false);
 
   return (
-    <div className="inter font-serif">
+
+    <>
+
+        <div className="inter font-serif">
       {!showContent && (
         <LogoIntro onFinish={() => setShowContent(true)} />
       )}
@@ -46,6 +49,8 @@ const App = () => {
         </Router>
       )}
     </div>
+    </>
+
   );
 };
 
