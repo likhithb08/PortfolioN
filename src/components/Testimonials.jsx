@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { CiCirclePlus } from "react-icons/ci";
 import { Link } from "react-router-dom";
 
-const Testimonials = ({testimonials}) => {
+const Testimonials = ({testimonials = []}) => {
   
 
   return (
@@ -23,7 +23,11 @@ const Testimonials = ({testimonials}) => {
 
       {/* Testimonial cards */}
       <div className="flex flex-row gap-5 sm:gap-10 justify-center items-center flex-wrap m-4 sm:m-10">
-        {testimonials.map((testimonial, index) => (
+        <div className="flex flex-row gap-5 sm:gap-10 justify-center items-center flex-wrap m-4 sm:m-10">
+  {testimonials.length === 0 ? (
+    <p className="text-gray-500">No testimonials yet. Be the first to leave a review!</p>
+  ) : (
+      {testimonials.map((testimonial, index) => (
           <div
             id="testimonials"
             key={index}
@@ -48,6 +52,11 @@ const Testimonials = ({testimonials}) => {
             </div>
           </div>
         ))}
+
+  )}
+</div>
+
+
       </div>
     </div>
   );

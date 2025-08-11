@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 
 function Model() {
-  const { scene } = useGLTF('public/xrevolution_n.a.i.__pointcloud_iii.glb');
+  const { scene } = useGLTF('public/xrevolution_n.a.i.__points_ii.glb');
   return <primitive object={scene} scale={1.5} />;
 }
 
