@@ -38,16 +38,17 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5, delay: 0.5 }}
-            href="#"
+            href="#projects"
             className="bg-[#BF4408] text-white px-3 sm:px-4 py-1 rounded-full bold hover:border border-[#BF4408] hover:bg-white hover:text-[#BF4408] text-sm sm:text-base"
           >
             <b>View Projects</b>
           </motion.a>
           <motion.a
+          
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 2, delay: 1 }}
-            href="#"
+            href="#contact"
             className="border border-[#BF4408] text-[#BF4408] px-3 sm:px-4 py-1 rounded-full hover:bg-[#BF4408] hover:text-white text-sm sm:text-base"
           >
             <b>Contact Me</b>
@@ -55,7 +56,9 @@ const HeroSection = () => {
         </div>
       </motion.div>
       
-      <motion.div className="hero-section h-[250px] sm:h-[350px] md:h-[500px] flex p-4 sm:p-5 bg-gray-100 items-center gap-5 sm:gap-10 mt-8 sm:mt-10 overflow-x-auto scroll-container scroll-smooth justify-center">
+      <motion.div 
+      id="projects"
+      className="hero-section h-[250px] sm:h-[350px] md:h-[500px] flex p-4 sm:p-5 bg-gray-100 items-center gap-5 sm:gap-10 mt-8 sm:mt-10 overflow-x-auto scroll-container scroll-smooth justify-center">
         {Object.values(images).map((image, index) => {
           return (
             <a href={image.link} key={index} className="flex-shrink-0" target="_blank">

@@ -6,7 +6,9 @@ const Testimonials = ({testimonials = []}) => {
   
 
   return (
-    <div className="p-4 sm:p-10 bg-gray-100 gap-3 sm:gap-5 flex flex-col justify-center items-center">
+    <div 
+     id="testimonials"
+    className="p-4 sm:p-10 bg-gray-100 gap-3 sm:gap-5 flex flex-col justify-center items-center">
       <h1 className="font-bold text-2xl sm:text-3xl">Testimonials</h1>
       <p className="text-sm sm:text-base text-center">
         See what my clients have to say about me..
@@ -14,7 +16,7 @@ const Testimonials = ({testimonials = []}) => {
 
       {/* Button to navigate to form */}
       <Link to="/addtestimonial">
-        <button className="relative group bottom-20 left-150 gap-10 py-2 flex items-center hover:text-[#BF4408] transition-colors">
+        <button className="relative group sm:bottom-20 sm:left-150 gap-10 py-2 flex items-center hover:text-[#BF4408] transition-colors">
           <p>Leave a Review</p>
           <span className="absolute -bottom-0 -left-0 rounded h-[2px] w-0 bg-[#BF4408] transition-all duration-500 group-hover:w-full"></span>
           <CiCirclePlus size={35} />

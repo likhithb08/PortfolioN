@@ -3,7 +3,7 @@ import { TiMediaPlayOutline } from "react-icons/ti";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 
-const Navbar = () => {
+const Navbar = ({onResumeClick}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -18,6 +18,7 @@ const Navbar = () => {
       {/* Hamburger button for mobile */}
       <button
         className="md:hidden text-3xl text-gray-700 focus:outline-none"
+        
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle menu"
       >
@@ -38,6 +39,7 @@ const Navbar = () => {
 
         <div className="flex gap-3 items-center">
           <a
+          onClick={onResumeClick}
             href="#"
             className="bg-[#BF4408] text-white px-4 py-2 rounded-full font-bold hover:bg-[#A03807] transition-colors"
           >

@@ -12,10 +12,14 @@ import Location from './components/Location';
 import Footer from './components/Footer';
 import LogoIntro from './components/LogoIntro';
 import TestimonialForm from './components/TestimonialForm';
+import Resume from './components/Resume';
+import { FaXmark } from "react-icons/fa6";
 
 const App = () => {
   const [showContent, setShowContent] = useState(false);
   const [testimonials, setTestimonials] = useState([]);
+  const [showResume, setShowResume] = useState(false);
+
 
   // Load testimonials from localStorage
   useEffect(() => {
@@ -44,9 +48,25 @@ const App = () => {
         <LogoIntro onFinish={() => setShowContent(true)} />
       )}
 
+
       {showContent && (
         <Router>
-          <Navbar />
+          <Navbar onResumeClick={() => setShowResume(true)} />
+
+                  {showResume && (
+        <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center">
+          {/* Close Button */}
+          <button
+            onClick={() => setShowResume(false)}
+            className="absolute top-5 right-5 text-white text-3xl hover:text-gray-300"
+          >
+            <FaXmark />
+          </button>
+
+          {/* Resume Viewer */}
+            <Resume></Resume>
+        </div>
+      )}
           <Routes>
             <Route
               path="/"
